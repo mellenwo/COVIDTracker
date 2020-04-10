@@ -24,6 +24,7 @@ class MainViewModel(private val repository: CovidStatRepository) : ViewModel() {
             globalStat.value = response.Global
 
             totalConfirmedGlobal.value = response.Global.TotalConfirmed.toString()
+            print(totalConfirmedGlobal.value)
         }
     }
 
